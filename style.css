@@ -1,0 +1,306 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #191b1d;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+section.pricing-section {
+  width: 100%;
+  height: 100vh;
+}
+section.pricing-section .pricing {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+section.pricing-section .pricing .pricing-header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #bc1e4a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 12px;
+  padding: 20px 70px;
+  border-radius: 0px 0px 8px 8px;
+}
+section.pricing-section .pricing .pricing-header p {
+  font-weight: 300;
+}
+section.pricing-section .pricing .pricing-header h3 {
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 5px;
+     -moz-column-gap: 5px;
+          column-gap: 5px;
+}
+section.pricing-section .pricing .pricing-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+section.pricing-section .pricing .pricing-body .pricing-body-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 15px;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-header h2 {
+  font-weight: 500;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-header .pricing-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-header .pricing-checkbox span {
+  font-size: 14px;
+  color: #b5b6b8;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-header .pricing-checkbox > div {
+  width: 45px;
+  background: #bc1e4a;
+  height: 24px;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-header .pricing-checkbox > div div {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  top: 50%;
+  left: 3px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-header .pricing-checkbox > div.anually div {
+  left: unset;
+  right: 3px;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div {
+  display: none;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 17px;
+     -moz-column-gap: 17px;
+          column-gap: 17px;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card {
+  background-color: #22262c;
+  padding: 25px;
+  border-radius: 8px;
+  width: 270px;
+  position: relative;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 8px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card .card-header .card-title {
+  font-weight: 400;
+  font-size: 14px;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card .card-header .card-price {
+  font-size: 26px;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card .card-header .card-users input {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #35393e;
+  padding: 10px;
+  color: #b5b6b8;
+  text-align: center;
+  outline: none;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card .card-header .card-users span {
+  font-size: 12px;
+  color: #bc1e4a;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card .card-body {
+  margin-top: 30px;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card .card-body ul {
+  list-style-type: none;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 8px;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card .card-body ul li {
+  color: #b5b6b8;
+  position: relative;
+  font-size: 14px;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card .card-body ul li::before {
+  content: "•";
+  color: #bc1e4a;
+  font-weight: bold;
+  width: 20px;
+  margin-left: -18px;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card .card-footer {
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card .card-footer button {
+  border: 1px solid #bc1e4a;
+  background: transparent;
+  padding: 10px 25px;
+  color: #b5b6b8;
+  cursor: pointer;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card .card-footer button:hover {
+  background: #bc1e4a;
+  color: #fff;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card:nth-of-type(2) .card-footer button {
+  background: #bc1e4a;
+  color: #fff;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card:nth-of-type(2) .card-footer button:hover {
+  background: transparent;
+  color: #b5b6b8;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div.active {
+  display: block;
+}
+
+@media screen and (max-width: 900px) {
+  section.pricing-section {
+    width: 100%;
+    height: auto;
+  }
+  section.pricing-section .pricing .pricing-header {
+    width: 60%;
+    padding: 20px 50px;
+  }
+  section.pricing-section .pricing .pricing-body {
+    margin-top: 780px;
+    padding-bottom: 50px;
+  }
+  section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 17px;
+  }
+}
+@media screen and (max-width: 500px) {
+  section.pricing-section .pricing .pricing-header {
+    width: 100%;
+    padding: 20px 50px;
+    position: unset;
+    top: unset;
+    left: unset;
+    -webkit-transform: unset;
+            transform: unset;
+  }
+  section.pricing-section .pricing .pricing-header p {
+    font-size: 14px;
+  }
+  section.pricing-section .pricing .pricing-header h3 {
+    font-size: 18px;
+  }
+  section.pricing-section .pricing .pricing-body {
+    margin-top: 50px;
+    position: unset;
+    top: unset;
+    left: unset;
+    -webkit-transform: unset;
+            transform: unset;
+  }
+}
